@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,8 +17,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <script type="text/javascript"></script>
+  <body>    
     <header class="sticky-bg">
       <nav>
         <div class="nav-links">
@@ -36,52 +36,114 @@
     </header>
     
 
-    <!-- Home Section  -->
-
-    
+    <!-- Home Section  -->    
 
     <section id="home">
       
       <div id="animatedBackground">
       </div>
-      
 
-      <div class="home-title">
+      <div id="home-title" class="home-title">
         <div class="home-sub-container-one">
           <span id="title-one">ABOUT ME</span>
         </div>
         <div class="home-sub-container-two">
           <span id="title-two">Troy Papazoglou</span>
         </div>
-        <div class="home-sub-container-three">
-          <span id="subtitle-text"
-            >Welcome to my portfolio. I am a game programmer!</span
-          >
+        <div id="content" class="content">
+          <div class="content__container">
+            <p id="content_container_text" class="content__container__text">
+              I am a game programmer! I specialise in
+            </p>        
+            <ul id="content_container_list" class="content__container__list">
+              <li class="content__container__list__item">Unity !</li>
+              <li class="content__container__list__item">C# !</li>
+              <li class="content__container__list__item">C++ !</li>
+              <li class="content__container__list__item">HTML !</li>    
+              <li class="content__container__list__item">CSS !</li>  
+              <li class="content__container__list__item">Java !</li>           
+            </ul>
         </div>
       </div>
-
+      
       <div class="contac-col">
         <div class="social-icon-wrapper">
-          <a
+          <a 
+            id="githubIcon"
             href="https://github.com/TroyPapazoglou"
             target="_blank"
             rel="noopener noreferrer"
-            ><img src="assets/images/githubIcon.svg" alt=""/></a>
+            ><img src="assets/images/githubIcon.svg" alt=""/>
+          </a>
           <a 
+            id="itchIcon"
             href="https://itsjusttroy.itch.io"
             target="_blank"
             rel="noopener noreferrer"
-            ><img src="assets/images/itchIcon.svg" alt="" /></a>
+            ><img src="assets/images/itchIcon.svg" alt="" />
+          </a>
           <a 
+          id="linkedInIcon"
             href="https://www.linkedin.com/in/troy-papazoglou-abba00284/"
             target="_blank"
             rel="noopener noreferrer"
-            ><img src="assets/images/linkedinIcon.svg" alt=""/></a>          
+            ><img src="assets/images/linkedinIcon.svg" alt=""/>
+          </a>          
+        </div>
+      </div>
+      
+      <script src="LandingSectionScrollEffect.js" defer></script>
+      
+    </section>
+
+    <section class="major-projects">
+      <div class="dimmed-background"></div>
+      <div class="major-projects-title">MAJOR PROJECTS</div>
+
+      <div class="project-sections">
+        <div class="project-section" id="project-one">
+          <div class="background-wrapper"  id="background-one">
+            <video autoplay muted loop class="background-video">
+              <source src="assets/videos/JawbreakerVid.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="gradient-overlay"></div>
+          </div>
+          <div class="content-wrapper">
+            <img src="assets/images/jawbreakerSectionPopupTransparent.png" alt="JawBreaker Character" class="character">            
+            <div class="overlay-content">JawBreaker</div>
+          </div>
+        </div>
+
+        <div class="project-section" id="project-two">
+          <div class="background-wrapper"  id="background-two">
+            <img src="assets/gifs/pupperWalking.gif" alt="Project Two Animation" class="background-gif">
+            <div class="gradient-overlay"></div>
+          </div>
+          <div class="content-wrapper">
+            <img src="assets/images/h.elevator-SectionPopupTransparent.png" alt="H.Elevator Character" class="character">           
+            <div class="overlay-content">H.Elevator</div>
+          </div>
+        </div>
+        
+        <div class="project-section" id="project-three">
+          <div class="background-wrapper"  id="background-three">
+            <video autoplay muted loop class="background-video">
+              <source src="assets/videos/Puurfect-catch-montage.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="gradient-overlay"></div>
+          </div>
+          <div class="content-wrapper">
+            <img src="assets/images/purfect-catchSectionPopupTransparent.png" alt="Purfect-Catch Character" class="character">            
+            <div class="overlay-content">Purfect-Catch</div>
+          </div>
         </div>
       </div>
     </section>
-
+    <script src="ContentsBG.js"></script>
     
-    <script type="text/javascript"></script>   
+    <script src="ScrollToPageOnFullscreen.js"></script>
+    
   </body>
 </html>
