@@ -336,7 +336,7 @@ body {
   background-position: 0 0;
   background-size: auto 100%;
   transition: 0.7s;
-/*adjust s value for speed*/
+  /*adjust s value for speed*/
   animation: animatedBackground 500s linear infinite;
 
   /* Mask to create the fade effect */
@@ -351,7 +351,7 @@ body {
   from {
     background-position: 0 0;
   }
-/*remember negative width if you want it to flow right to left else and positive for left to right*/
+  /*remember negative width if you want it to flow right to left else and positive for left to right*/
   to {
     background-position: -10000px 0;
   }
@@ -452,17 +452,17 @@ body {
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 1),  /* Solid black at the top */
-    rgba(0, 0, 0, 0) 50%, /* Transparent in the middle */
-    rgba(0, 0, 0, 0.5) /* Faded black at the bottom */
+    rgba(0, 0, 0, 1),  
+    rgba(0, 0, 0, 0) 50%, 
+    rgba(0, 0, 0, 1) 
   );
-  opacity: 0; /* Start with invisible overlay */
-  pointer-events: none; /* Prevent the overlay from interfering with hover events */
-  transition: opacity 0.5s ease; /* Smooth transition */
+  opacity: 0;
+  pointer-events: none; 
+  transition: opacity 0.5s ease; 
 }
 
 .background-wrapper:hover::before {
-  opacity: 1; /* Show the gradient overlay on hover */
+  opacity: 1; 
 }
 
 .background-wrapper .overlay-content {
@@ -485,28 +485,28 @@ body {
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 1),  /* Solid black at the top */
-    rgba(0, 0, 0, 0) 50%, /* Transparent in the middle */
-    rgba(0, 0, 0, 0.5) /* Faded black at the bottom */
+    rgba(0, 0, 0, 1),  
+    rgba(0, 0, 0, 0) 50%, 
+    rgba(0, 0, 0, 1) 
   );
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.5s ease; /* Smooth fade-in and fade-out */
-  pointer-events: none; /* Prevent overlay from blocking events */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none; 
 }
 
 .background-wrapper:hover .gradient-overlay {
-  opacity: 1; /* Show gradient overlay on hover */
+  opacity: 1; 
 }
 
 
 .background-wrapper.shrink { 
   transition: 0.5s;
-  filter: grayscale(80%) brightness(0.6); /* Grey overlay effect */
+  filter: grayscale(80%) brightness(0.6);
 }
 
 .background-wrapper.visible {
   opacity: 1;
-  transform: translateY(0); /* Move back to its original position */
+  transform: translateY(0);
 }
 
 .background-wrapper.hidden {
@@ -516,8 +516,8 @@ body {
 
 .background-wrapper:hover {
   transition: 0.5s;
-  transform: scale(1.1); /* Ensure hovered element scales up properly */
-  z-index: 2; /* Bring it above others for visual focus */
+  transform: scale(1.1); 
+  z-index: 2; 
   box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 }
 
@@ -535,7 +535,7 @@ body {
 
 .character
 {  
-  width: clamp(200px, 28vw, 700px); /* Min: 200px, Preferred: 30% of viewport width, Max: 400px */
+  width: clamp(200px, 28vw, 700px); /* Min: 200px, Preferred: 28% of viewport width, Max: 700px */
   transform: translateY(10%);
   opacity: 0;  
   transition: all 0.5s ease;
@@ -557,11 +557,11 @@ body {
   position: absolute;  
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.4); /* Grey dimmed overlay */
-  opacity: 1; /* Visible by default */
-  pointer-events: none; /* Allow interactions through it */
-  transition: opacity 1s ease; /* Smooth transition for dynamic content */
-  z-index: 0; /* Behind other content */
+  background-color: rgba(255, 255, 255, 0.4); 
+  opacity: 1;
+  pointer-events: none; 
+  transition: opacity 1s ease;
+  z-index: 0; 
 }
 
 .dimmed-background img,
@@ -572,22 +572,22 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8; /* Allow the greyed-out look through */  
+  opacity: 0.8; 
 }
 
 
 
 /* Initial transforms */
 #background-one {
-  transform: rotateY(30deg); /* Left facing middle */
+  transform: rotateY(30deg);
 }
 
 #background-two {
-  transform: rotateY(0deg); /* Middle facing forward */
+  transform: rotateY(0deg); 
 }
 
 #background-three {
-  transform: rotateY(-30deg); /* Right facing middle */
+  transform: rotateY(-30deg); 
 }
 
 .background-video,
@@ -626,6 +626,69 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+
+
+/* Other Project section */
+.projects-section {  
+  width: 100%;   
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1b1e1e;
+}
+
+.projects-title { 
+  padding-top: 5%;
+  text-align: center;  
+  font-size: 2em;
+  color: #333;
+}
+
+.projects-grid {
+  display: grid;
+  justify-content: center;
+  padding: 15%;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  row-gap: 6%;
+  column-gap: 2%;
+  padding-top: 5%;  
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  height: 350px;     
+}
+
+.project-card video {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.project-info {
+  height: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+.project-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.project-info p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #777;
+}
+
 
 
 /* CONTENT STUFF */
