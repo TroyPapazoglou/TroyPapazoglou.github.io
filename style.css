@@ -166,7 +166,7 @@ header {
   #home {
     min-height: 100vh;
     max-width: 100vw;
-    background-color: rgba(31, 31, 31, 0.99);    
+    background-color: rgba(31, 31, 31, 0.97);    
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -426,7 +426,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   z-index: 2;  
   transition: 0.5s;
-  
+  perspective: 2500px;
 }
 
 .background-wrapper { 
@@ -464,18 +464,6 @@ body {
 
 .background-wrapper:hover::before {
   opacity: 1; 
-}
-
-.background-wrapper .overlay-content {
-  position: absolute;
-  top: 100%;
-  color: rgb(255, 255, 255);
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  z-index: 2; 
-  transition: 0.5s;
-  
 }
 
 .gradient-overlay {
@@ -548,7 +536,22 @@ body {
   transform: translate3d(0%, -10%, 100px);
 }
 
+.logo
+{ 
+  transform: translateY(10%);
+  width: clamp(200px, 28vw, 700px);
+  opacity: 0;
+  top: 80%;
+  position: absolute; 
+  height: 20%;
+  transition: all 0.5s ease;
+}
 
+.logo.fade-in
+{
+  opacity: 1;
+  transform: translate3d(0%, -10%, 100px);
+}
 
 
 
@@ -576,9 +579,9 @@ body {
   opacity: 0.8; 
 }
 
-
-
 /* Initial transforms */
+
+
 #background-one {
   transform: rotateY(30deg);
 }
@@ -692,6 +695,35 @@ body {
   font-size: 0.9em;
   color: #777;
 }
+
+
+@keyframes square-in-center {
+  from {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:square:center"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-center both;
+}
+
+@keyframes square-out-center {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+}
+
+[transition-style="out:square:center"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-out-center both;
+}
+
+
 
 
 

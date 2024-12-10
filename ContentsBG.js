@@ -38,6 +38,7 @@ projectSections.forEach((section, index) => {
     const contentWrapper = section.querySelector('.content-wrapper');
     const backgroundWrapper = section.querySelector('.background-wrapper');
     const character = contentWrapper ? contentWrapper.querySelector('.character') : null;
+    const logo = contentWrapper ? contentWrapper.querySelector('.logo') : null;
     
     if (dimmedOverlay) {
       dimmedOverlay.style.display = 'block';
@@ -92,6 +93,12 @@ projectSections.forEach((section, index) => {
     if (character) {    
       character.classList.add('fade-in');
     } 
+
+    if(logo)
+    {
+      logo.classList.add('fade-in');
+    }
+    
   });
 
   section.addEventListener('mouseleave', () => {
@@ -112,8 +119,12 @@ projectSections.forEach((section, index) => {
     });
 
     const character = section.querySelector('.character');
+    const logo = section.querySelector('.logo');
     if (character) {
       character.classList.remove('fade-in');
+    }
+    if (logo) {
+      logo.classList.remove('fade-in');
     }
     
   });
