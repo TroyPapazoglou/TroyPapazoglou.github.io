@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const homeSection = document.querySelector("#home");
   const projectsSection = document.querySelector(".major-projects");
   const otherProjectSection = document.querySelector(".projects-section");
+  const projectSections = document.querySelectorAll('.project-section');
   const sections = [homeSection, projectsSection, otherProjectSection];
 
   /**
@@ -24,6 +25,17 @@ document.addEventListener("DOMContentLoaded", () => {
     return closestSection;
   }
 
+  function scrollToMajorProjects() {
+    document.body.style.overflow = "hidden";
+
+    const sectionTop = projectsSection.offsetTop; // Get the top of the major projects section
+    
+    window.scrollTo({
+      top: sectionTop, // Scroll to the top of the section
+      behavior: "smooth",
+    });
+  }
+
   /**
    * Scrolls smoothly to the top of the closest section.
    */
@@ -40,4 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Listen for resizing and fullscreen changes
   window.addEventListener("resize", scrollToTopOfClosestSection);
   document.addEventListener("fullscreenchange", scrollToTopOfClosestSection);
+
+  projectSections.forEach((section) => {
+    section.addEventListener("click",scrollToMajorProjects);
+  });
 });
