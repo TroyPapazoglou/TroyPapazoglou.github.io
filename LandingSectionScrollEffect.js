@@ -11,15 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const value = window.scrollY;
   
       // Apply transformations to titles
-      titleOne.style.transform = `translateY(${value * 1}px)`;
-      titleTwo.style.transform = `translateY(${value * 1}px)`;
-      titleThree.style.transform = `translateY(${value * 1}px)`;
+      titleOne.style.transform = `translateY(${value}px)`;
+      titleTwo.style.transform = `translateY(${value}px)`;
+      titleThree.style.transform = `translateY(${value}px)`;
   
       // Rotate and move icons
       const rotationValue = value * 1.5;
-      githubIcon.style.transform = `translate(${value * -1}px, ${value * 1}px) rotate(${-rotationValue}deg)`;
-      itchIcon.style.transform = `translateY(${value * 1}px) rotate(${rotationValue}deg)`;
-      linkedInIcon.style.transform = `translate(${value * 1}px, ${value * 1}px) rotate(${rotationValue}deg)`;
+      githubIcon.style.transform = `translate(${value * -1}px, ${value}px) rotate(${-rotationValue}deg)`;
+      itchIcon.style.transform = `translateY(${value}px) rotate(${rotationValue}deg)`;
+      linkedInIcon.style.transform = `translate(${value}px, ${value}px) rotate(${rotationValue}deg)`;
   
       // Adjust opacity based on scroll
       let opacityValue = 1 - value / 1000;
