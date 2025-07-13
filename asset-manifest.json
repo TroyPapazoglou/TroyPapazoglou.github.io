@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8ebb2619.css",
+    "main.js": "/static/js/main.2f8036b8.js",
+    "static/media/JawbreakerGameplay.mp4": "/static/media/JawbreakerGameplay.3549a9fb5b92a068a916.mp4",
+    "static/media/PurrfectCatachTrailerV1.mp4": "/static/media/PurrfectCatachTrailerV1.6f7b5ff3241b3ab91143.mp4",
+    "static/media/checkerBackDropGradient.png": "/static/media/checkerBackDropGradient.b025c56c4382b49fb62a.png",
+    "static/media/Helevatorlogo.png": "/static/media/Helevatorlogo.55b97aeac72121480d7d.png",
+    "static/media/jawbreakermenupipe.png": "/static/media/jawbreakermenupipe.4543f5e6d2ec073d73bb.png",
+    "static/media/Purrfectcatchlogo.png": "/static/media/Purrfectcatchlogo.a7d4c8cbc675d66329c4.png",
+    "static/media/JawbreakerPipeBg.png": "/static/media/JawbreakerPipeBg.2a778a7d549d3782fb3a.png",
+    "static/media/pupperWalking.gif": "/static/media/pupperWalking.a3cae55fd863d5f8f8f2.gif",
+    "static/media/JawbreakerLogo.png": "/static/media/JawbreakerLogo.0ed649119d47202e1fef.png",
+    "static/media/h.elevator-SectionPopupTransparent.png": "/static/media/h.elevator-SectionPopupTransparent.7a5b9d1f79ee90a6120a.png",
+    "static/media/jawbreakerSectionPopupTransparent.png": "/static/media/jawbreakerSectionPopupTransparent.220807a4f08d436baa3b.png",
+    "static/media/purfect-catchSectionPopupTransparent.png": "/static/media/purfect-catchSectionPopupTransparent.696d7eb9b3e03a0e1c99.png",
+    "static/media/KeepCheese-1j24g.ttf": "/static/media/KeepCheese-1j24g.eb4a7969079e3c334b76.ttf",
+    "static/media/jawbreakeracid.png": "/static/media/jawbreakeracid.c522e7bcc8c0b8b38f30.png",
+    "static/media/itchIcon.svg": "/static/media/itchIcon.b3e0076074629b4a7ca36ca7de4764e2.svg",
+    "static/media/githubIcon.svg": "/static/media/githubIcon.6d312d789a6769d07ec815a52e50fae8.svg",
+    "index.html": "/index.html",
+    "static/media/linkedinIcon.svg": "/static/media/linkedinIcon.540f6bb939a10fe0badbc26387374d38.svg",
+    "main.8ebb2619.css.map": "/static/css/main.8ebb2619.css.map",
+    "main.2f8036b8.js.map": "/static/js/main.2f8036b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ebb2619.css",
+    "static/js/main.2f8036b8.js"
+  ]
+}
