@@ -23,8 +23,6 @@ import PurrfectCatchSectionPopup from '../images/purfect-catchSectionPopupTransp
 import PurrfectCatchLogo from '../images/Purrfectcatchlogo.png';
 import JawbreakerSection from './JawbreakerSection.js';
 
-import UnderConstruction from '../images/underconstructiontape.png';
-
 export default function()
 {
     useEffect(() => {
